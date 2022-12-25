@@ -5,23 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="6b4919e8-9c7a-4ef2-9ef8-0d2f0aa6fd9e" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.github/workflows/update.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/german-tv-m3u.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/german-tv.m3u" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gitattributes" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.github/workflows/docker.yml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Dart_Packages.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Dart_Packages.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Dockerfile" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/m3u_service.dart" beforeDir="false" afterPath="$PROJECT_DIR$/bin/m3u_service.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/server.dart" beforeDir="false" afterPath="$PROJECT_DIR$/bin/updater.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/german-tv-m3u.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/pubspec.lock" beforeDir="false" afterPath="$PROJECT_DIR$/pubspec.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pubspec.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/pubspec.yaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/server_test.dart" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.github/workflows/update.yml" beforeDir="false" afterPath="$PROJECT_DIR$/.github/workflows/update.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/german-tv.m3u" beforeDir="false" afterPath="$PROJECT_DIR$/german-tv.m3u" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -71,7 +57,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1672009011575</updated>
-      <workItem from="1672009014136" duration="844000" />
+      <workItem from="1672009014136" duration="1148000" />
     </task>
     <servers />
   </component>

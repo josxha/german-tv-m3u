@@ -1,4 +1,4 @@
-name: Build Docker
+name: Update M3U
 
 on:
   workflow_dispatch:
@@ -18,7 +18,7 @@ jobs:
         run: dart run bin/updater.dart
       - name: Check difference
         run: |
-          status=$(git status -s german-tv-m3u) && \
+          status=$(git status -s) && \
           echo $status && \
           echo "GIT_STATUS=${status//$'\n'/\\n}" >> $GITHUB_ENV
       - name: Push changes
