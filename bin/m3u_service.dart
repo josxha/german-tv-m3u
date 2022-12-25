@@ -8,6 +8,7 @@ class M3uService {
 
   static Future<String> getFilteredString() async {
     final service = await create();
+    service.filter();
     return service.playlistToString();
   }
 

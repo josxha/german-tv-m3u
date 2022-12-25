@@ -1,0 +1,30 @@
+name: Build Docker
+
+on:
+  workflow_dispatch:
+  push:
+    branches:
+      - main
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v2
+      - uses: dart-lang/setup-dart@v1.3
+      - name: Install dependencies
+        run: dart pub get
+      - name: Update m3u file
+        run: dart run bin/updater.dart
+      - name: Check difference
+        run: |
+          status=$(git status -s german-tv-m3u) && \
+          echo $status && \
+          echo "GIT_STATUS=${status//$'\n'/\\n}" >> $GITHUB_ENV
+      - name: Push changes
+        if: "contains(env.GIT_STATUS, 'german-tv.m3u')"
+        run: |
+          git config --global user.email "action@github.com" && \
+          git config --global user.name "Github CI" && \
+          git commit -a -m "update m3u" && \
+          git push
