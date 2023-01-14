@@ -67,12 +67,12 @@ class M3uService {
   String playlistToString() {
     final lines = ["#EXTM3U"];
     for (final entry in playlist) {
-      lines.add(entry.link);
       final content = ["#EXTINF:-1"];
       for (final attribute in entry.attributes.entries) {
         content.add('${attribute.key}="${attribute.value ?? ""}"');
       }
       lines.add("${content.join(" ")},${entry.title}");
+      lines.add(entry.link);
     }
     return lines.join("\n");
   }
