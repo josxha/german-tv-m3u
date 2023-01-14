@@ -1,55 +1,55 @@
 #EXTM3U
-https://mcdn.daserste.de/daserste/de/master.m3u8
 #EXTINF:-1 tvg-name="Das Erste HD" tvg-id="DasErste.de" group-title="Vollprogramm" tvg-logo="https://raw.githubusercontent.com/jnk22/kodinerds-iptv/master/logos/tv/daserstehd.png",Das Erste HD
-https://zdf-hls-15.akamaized.net/hls/live/2016498/de/veryhigh/master.m3u8
+https://mcdn.daserste.de/daserste/de/master.m3u8
 #EXTINF:-1 tvg-name="ZDF HD" tvg-id="ZDF.de" group-title="Vollprogramm" tvg-logo="https://raw.githubusercontent.com/jnk22/kodinerds-iptv/master/logos/tv/zdfhd.png",ZDF HD
-https://zdf-hls-18.akamaized.net/hls/live/2016501/dach/veryhigh/master.m3u8
+https://zdf-hls-15.akamaized.net/hls/live/2016498/de/veryhigh/master.m3u8
 #EXTINF:-1 tvg-name="3sat" tvg-id="3sat.de" group-title="Vollprogramm" tvg-logo="https://raw.githubusercontent.com/jnk22/kodinerds-iptv/master/logos/tv/3sat.png",3sat
-https://artesimulcast.akamaized.net/hls/live/2030993/artelive_de/master.m3u8
+https://zdf-hls-18.akamaized.net/hls/live/2016501/dach/veryhigh/master.m3u8
 #EXTINF:-1 tvg-name="ARTE HD" tvg-id="ARTE.de" group-title="Vollprogramm" tvg-logo="https://raw.githubusercontent.com/jnk22/kodinerds-iptv/master/logos/tv/artehd.png",ARTE HD
-https://stv-live.akamaized.net/hls/live/2031012/lingeoSTVDEwebPri/master.m3u8
+https://artesimulcast.akamaized.net/hls/live/2030993/artelive_de/master.m3u8
 #EXTINF:-1 tvg-name="ServusTV HD" tvg-id="ServusHD.de" group-title="Spartenprogramm" tvg-logo="https://raw.githubusercontent.com/jnk22/kodinerds-iptv/master/logos/tv/servustvhd.png",ServusTV HD
-https://mcdn.br.de/br/fs/ard_alpha/hls/de/master.m3u8
+https://stv-live.akamaized.net/hls/live/2031012/lingeoSTVDEwebPri/master.m3u8
 #EXTINF:-1 tvg-name="ARD-alpha" tvg-id="ARD-alpha.de" group-title="Spartenprogramm" tvg-logo="https://raw.githubusercontent.com/jnk22/kodinerds-iptv/master/logos/tv/ardalpha.png",ARD-alpha
-https://mcdn.one.ard.de/ardone/hls/master.m3u8
+https://mcdn.br.de/br/fs/ard_alpha/hls/de/master.m3u8
 #EXTINF:-1 tvg-name="one HD" tvg-id="One.de" group-title="Spartenprogramm" tvg-logo="https://raw.githubusercontent.com/jnk22/kodinerds-iptv/master/logos/tv/onehd.png",one HD
-https://zdf-hls-16.akamaized.net/hls/live/2016499/de/veryhigh/master.m3u8
+https://mcdn.one.ard.de/ardone/hls/master.m3u8
 #EXTINF:-1 tvg-name="ZDFneo HD" tvg-id="ZDFneo.de" group-title="Spartenprogramm" tvg-logo="https://raw.githubusercontent.com/jnk22/kodinerds-iptv/master/logos/tv/zdfneohd.png",ZDFneo HD
-https://zdf-hls-17.akamaized.net/hls/live/2016500/de/veryhigh/master.m3u8
+https://zdf-hls-16.akamaized.net/hls/live/2016499/de/veryhigh/master.m3u8
 #EXTINF:-1 tvg-name="ZDFinfo HD" tvg-id="ZDFinfo.de" group-title="Spartenprogramm" tvg-logo="https://raw.githubusercontent.com/jnk22/kodinerds-iptv/master/logos/tv/zdfinfohd.png",ZDFinfo HD
-https://wdw.iptv-playoutcenter.de/wdw/wdw1/playlist.m3u8
+https://zdf-hls-17.akamaized.net/hls/live/2016500/de/veryhigh/master.m3u8
 #EXTINF:-1 tvg-name="Welt der Wunder" tvg-id="WeltderWunder.de" group-title="Spartenprogramm" tvg-logo="https://raw.githubusercontent.com/jnk22/kodinerds-iptv/master/logos/tv/weltderwunder.png",Welt der Wunder
-https://ma.anixa.tv/clips/stream/anixehd/index.m3u8
+https://wdw.iptv-playoutcenter.de/wdw/wdw1/playlist.m3u8
 #EXTINF:-1 tvg-name="ANIXE HD" tvg-id="Anixe.de" group-title="Spartenprogramm" tvg-logo="https://raw.githubusercontent.com/jnk22/kodinerds-iptv/master/logos/tv/anixehd.png",ANIXE HD
-https://wdrfs247.akamaized.net/hls/live/681509/wdr_msl4_fs247/index.m3u8
+https://ma.anixa.tv/clips/stream/anixehd/index.m3u8
 #EXTINF:-1 tvg-name="WDR HD" tvg-id="WDRFernsehen.de" group-title="Regional" tvg-logo="https://raw.githubusercontent.com/jnk22/kodinerds-iptv/master/logos/tv/wdrhd.png",WDR HD
-https://swrbwd-hls.akamaized.net/hls/live/2018672/swrbwd/master.m3u8
+https://wdrfs247.akamaized.net/hls/live/681509/wdr_msl4_fs247/index.m3u8
 #EXTINF:-1 tvg-name="SWR Baden-Württemberg HD " tvg-id="SWRFernsehen.de" group-title="Regional" tvg-logo="https://raw.githubusercontent.com/jnk22/kodinerds-iptv/master/logos/tv/swrhd.png",SWR Baden-Württemberg HD
-https://mcdn.ndr.de/ndr/hls/ndr_fs/ndr_nds/master.m3u8
+https://swrbwd-hls.akamaized.net/hls/live/2018672/swrbwd/master.m3u8
 #EXTINF:-1 tvg-name="NDR Niedersachsen HD" tvg-id="NDRFernsehen.de" group-title="Regional" tvg-logo="https://raw.githubusercontent.com/jnk22/kodinerds-iptv/master/logos/tv/ndrhd.png",NDR Niedersachsen HD
-https://rbhlslive.akamaized.net/hls/live/2020435/rbfs/master.m3u8
+https://mcdn.ndr.de/ndr/hls/ndr_fs/ndr_nds/master.m3u8
 #EXTINF:-1 tvg-name="Radio Bremen TV HD" tvg-id="RadioBremen.de" group-title="Regional" tvg-logo="https://raw.githubusercontent.com/jnk22/kodinerds-iptv/master/logos/tv/rbtv.png",Radio Bremen TV HD
-https://mcdn.br.de/br/fs/bfs_nord/hls/de/master.m3u8
+https://rbhlslive.akamaized.net/hls/live/2020435/rbfs/master.m3u8
 #EXTINF:-1 tvg-name="BR Fernsehen Nord HD" tvg-id="BR.de" group-title="Regional" tvg-logo="https://raw.githubusercontent.com/jnk22/kodinerds-iptv/master/logos/tv/brhd.png",BR Fernsehen Nord HD
-https://mdrtvsnhls.akamaized.net/hls/live/2016928/mdrtvsn/index.m3u8
+https://mcdn.br.de/br/fs/bfs_nord/hls/de/master.m3u8
 #EXTINF:-1 tvg-name="MDR Sachsen HD" tvg-id="MDRSachsen.de" group-title="Regional" tvg-logo="https://raw.githubusercontent.com/jnk22/kodinerds-iptv/master/logos/tv/mdrhd.png",MDR Sachsen HD
-https://hrhlsde.akamaized.net/hls/live/2024526/hrhlsde/index.m3u8
+https://mdrtvsnhls.akamaized.net/hls/live/2016928/mdrtvsn/index.m3u8
 #EXTINF:-1 tvg-name="hr-fernsehen" tvg-id="HR.de" group-title="Regional" tvg-logo="https://raw.githubusercontent.com/jnk22/kodinerds-iptv/master/logos/tv/hr.png",hr-fernsehen
-https://rbb-hls-berlin.akamaized.net/hls/live/2017824/rbb_berlin/master.m3u8
+https://hrhlsde.akamaized.net/hls/live/2024526/hrhlsde/index.m3u8
 #EXTINF:-1 tvg-name="rbb Berlin HD" tvg-id="rbbBerlin.de" group-title="Regional" tvg-logo="https://raw.githubusercontent.com/jnk22/kodinerds-iptv/master/logos/tv/rbbhd.png",rbb Berlin HD
-https://srfs.akamaized.net/hls/live/689649/srfsgeo/index.m3u8
+https://rbb-hls-berlin.akamaized.net/hls/live/2017824/rbb_berlin/master.m3u8
 #EXTINF:-1 tvg-name="SR Fernsehen HD" tvg-id="SRFernsehen.de" group-title="Regional" tvg-logo="https://raw.githubusercontent.com/jnk22/kodinerds-iptv/master/logos/tv/srhd.png",SR Fernsehen HD
-https://dwamdstream111.akamaized.net/hls/live/2017972/dwstream111/index.m3u8
+https://srfs.akamaized.net/hls/live/689649/srfsgeo/index.m3u8
 #EXTINF:-1 tvg-name="Deutsche Welle" tvg-id="DeutscheWelleDE.de" group-title="Regional" tvg-logo="https://raw.githubusercontent.com/jnk22/kodinerds-iptv/master/logos/tv/deutschewelle.png",Deutsche Welle
-https://58de7a369a9c4.streamlock.net/srf/stream_720p/playlist.m3u8
+https://dwamdstream111.akamaized.net/hls/live/2017972/dwstream111/index.m3u8
 #EXTINF:-1 tvg-name="Südthüringer Regionalfernsehen" tvg-id="srf-online.de" group-title="Regional" tvg-logo="https://raw.githubusercontent.com/jnk22/kodinerds-iptv/master/logos/tv/suedthueringer_regionalfernsehen.png",Südthüringer Regionalfernsehen
-http://wowza.telvi.de/rennsteigtv/stream_720p/playlist.m3u8
+https://58de7a369a9c4.streamlock.net/srf/stream_720p/playlist.m3u8
 #EXTINF:-1 tvg-name="Rennsteig.tv" tvg-id="rennsteig.tv" group-title="Regional" tvg-logo="https://raw.githubusercontent.com/jnk22/kodinerds-iptv/master/logos/tv/rennsteigtv.png",Rennsteig.tv
-https://5857499ee635b.streamlock.net/heinstv-live/_definst_/smil:livestream.smil/playlist.m3u8
+http://wowza.telvi.de/rennsteigtv/stream_720p/playlist.m3u8
 #EXTINF:-1 tvg-name="h-eins.tv" tvg-id="h-eins.tv" group-title="Regional" tvg-logo="https://raw.githubusercontent.com/jnk22/kodinerds-iptv/master/logos/tv/h1tv.png",h1
-https://stv-live.akamaized.net/hls/live/2031011/lingeoSTVATwebPri/master.m3u8
+https://5857499ee635b.streamlock.net/heinstv-live/_definst_/smil:livestream.smil/playlist.m3u8
 #EXTINF:-1 tvg-name="ServusTV HD (AT)" tvg-id="ServusTV.at" group-title="International;Spartenprogramm" tvg-logo="https://raw.githubusercontent.com/jnk22/kodinerds-iptv/master/logos/tv/servustvhd.png",ServusTV HD (AT)
-https://kronetv.mdn.ors.at/out/u/kronetv-nodrm.m3u8
+https://stv-live.akamaized.net/hls/live/2031011/lingeoSTVATwebPri/master.m3u8
 #EXTINF:-1 tvg-name="Krone.TV" tvg-id="KroneTV.at" group-title="International;Spartenprogramm" tvg-logo="https://raw.githubusercontent.com/jnk22/kodinerds-iptv/master/logos/tv/kronetv.png",Krone.TV
-https://cdn3.wowza.com/1/MHFtazJReW5rOFhP/N2NWNDZ2/hls/live/playlist.m3u8
+https://kronetv.mdn.ors.at/out/u/kronetv-nodrm.m3u8
 #EXTINF:-1 tvg-name="Okto" tvg-id="OKTO.at" group-title="International;Spartenprogramm" tvg-logo="https://raw.githubusercontent.com/jnk22/kodinerds-iptv/master/logos/tv/okto.png",Okto
+https://cdn3.wowza.com/1/MHFtazJReW5rOFhP/N2NWNDZ2/hls/live/playlist.m3u8
