@@ -4,4 +4,4 @@
 
 # Conventional directory for build output.
 build/
-.idea/workspace.xml
+.idea/
