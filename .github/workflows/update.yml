@@ -3,25 +3,25 @@ name: Update M3U
 on:
   workflow_dispatch:
   push:
-    branches:
-      - main
+    branches: [ main ]
+
 jobs:
   build:
     runs-on: ubuntu-latest
     steps:
-      - name: Checkout code
+      - name: "Checkout code"
         uses: actions/checkout@v6
-      - uses: dart-lang/setup-dart@v1.4
-      - name: Install dependencies
+      - uses: dart-lang/setup-dart@v1
+      - name: "Install dependencies"
         run: dart pub get
-      - name: Update m3u file
-        run: dart run bin/updater.dart
-      - name: Check difference
+      - name: "Update m3u file"
+        run: dart run update.dart
+      - name: "Check difference"
         run: |
           status=$(git status -s) && \
           echo $status && \
           echo "GIT_STATUS=${status//$'\n'/\\n}" >> $GITHUB_ENV
-      - name: Push changes
+      - name: "Push changes"
         if: "contains(env.GIT_STATUS, 'german-tv.m3u')"
         run: |
           git config --global user.email "action@github.com" && \
