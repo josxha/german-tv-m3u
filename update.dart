@@ -4,9 +4,10 @@ import 'package:http/http.dart' as http;
 import 'package:m3u_nullsafe/m3u_nullsafe.dart';
 
 Future<void> main(List<String> args) async {
-  var playlist = await _fetchUpstream();
-  playlist = _filter(playlist);
-  final playlistString = _playlistToString(playlist);
+  final playlist = await _fetchUpstream();
+  final expressions = await _readExpressions();
+  final filtered = _filter(playlist, expressions);
+  final playlistString = _playlistToString(filtered);
   await File('german-tv.m3u').writeAsString(playlistString, mode: .writeOnly);
   // ignore: avoid_print
   print('success! 😎');
@@ -19,51 +20,40 @@ Future<List<M3uGenericEntry>> _fetchUpstream() async {
   return M3uParser.parse(response.body);
 }
 
-List<M3uGenericEntry> _filter(List<M3uGenericEntry> playlist) {
-  final list = <M3uGenericEntry>[];
-  const allowedCategories = {'Vollprogramm', 'Spartenprogramm', 'Regional'};
-  const whitelist = {'tagesschau24'};
-  final regionalSenders = <String>{};
+Future<Set<RegExp>> _readExpressions() async {
+  final file = File('expressions.txt');
+  if (!file.existsSync()) {
+    throw Exception('expressions.txt not found');
+  }
+  final lines = await file.readAsLines();
+  return lines
+      .map((line) => line.trim())
+      .where((line) => line.isNotEmpty)
+      .map((e) => RegExp('^$e( HD)?\$'))
+      .toSet();
+}
+
+List<M3uGenericEntry> _filter(
+  List<M3uGenericEntry> playlist,
+  Set<RegExp> expressions,
+) {
+  final entries = <String, M3uGenericEntry>{};
   for (final entry in playlist) {
-    final tvgName = entry.attributes['tvg-name'];
-    if (tvgName == null) continue;
-    final groupTitle = entry.attributes['group-title'];
-    if (groupTitle == null) continue;
+    final tvgName = entry.attributes['tvg-name']?.trim();
+    if (tvgName == null || tvgName.isEmpty) continue;
+    if (entries.containsKey(tvgName)) continue;
 
-    // whitelist senders
-    if (whitelist.contains(tvgName)) {
-      list.add(entry);
-      continue;
-    }
-
-    // filter categories
-    var isAllowedCategory = false;
-    for (final allowedCategory in allowedCategories) {
-      if (groupTitle.contains(allowedCategory)) {
-        isAllowedCategory = true;
+    // if the tvg-name does not match any of the expressions, skip it
+    for (final expression in expressions) {
+      if (expression.hasMatch(tvgName)) {
+        // ignore: avoid_print
+        print('[$tvgName] matches ${expression.pattern}');
+        entries[tvgName] = entry;
+        break;
       }
     }
-    if (!isAllowedCategory) continue;
-
-    // filter other languages
-    if (tvgName.endsWith('(FR)') ||
-        tvgName.endsWith('(EN)') ||
-        tvgName.endsWith('(AT)')) {
-      continue;
-    }
-    if (tvgName.contains(RegExp(r'.*\([A-Z]{2}\)'))) continue;
-
-    // duplicate streams from regional senders
-    if (groupTitle == 'Regional') {
-      final firstWord = tvgName.split(' ').first;
-      if (regionalSenders.contains(firstWord)) continue;
-      regionalSenders.add(firstWord);
-    }
-
-    // add to filtered list
-    list.add(entry);
   }
-  return list;
+  return entries.values.toList(growable: false);
 }
 
 String _playlistToString(List<M3uGenericEntry> playlist) {

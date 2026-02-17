@@ -1,0 +1,49 @@
+Das Erste
+ZDF
+3sat
+ARTE
+DF1
+ARD-alpha
+one
+ZDFneo
+ZDFinfo
+Welt der Wunder
+phoenix
+tagesschau24
+WELT
+Bild
+ANIXE HD
+Dokusat
+KiKA
+Lilo.TV
+Bibel TV
+K-TV
+WDR
+SWR Baden-Württemberg
+NDR Niedersachsen
+Radio Bremen TV
+BR Fernsehen Nord
+MDR Sachsen
+hr-fernsehen
+rbb Berlin
+SR Fernsehen
+Südthüringer Regionalfernsehen
+Rennsteig\.tv
+h-eins.tv
+Krone\.TV
+Okto
+h1
+a\.tv
+allgäu\.tv
+Baden TV
+Chemnitz Fernsehen
+Dresden Fernsehen
+Franken Fernsehen
+Hamburg 1
+KabelJournal
+L-TV
+Leipzig Fernsehen
+münchen\.tv
+noa4 .*
+OK.*
+Tide TV
